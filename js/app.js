@@ -2,7 +2,6 @@ const filter_btns = document.querySelectorAll(".filter-btn");
 const skills_wrap = document.querySelector(".skills");
 const skills_bars = document.querySelectorAll(".skill-progress");
 const records_wrap = document.querySelector(".records");
-const records_numbers = document.querySelectorAll(".number");
 const footer_input = document.querySelector(".footer-input");
 const hamburger_menu = document.querySelector(".hamburger-menu");
 const navbar = document.querySelector("header nav");
@@ -52,7 +51,6 @@ $(".grid").isotope({
 
 window.addEventListener("scroll", () => {
   skillsEffect();
-  countUp();
 });
 
 function checkScroll(el) {
@@ -64,27 +62,6 @@ function checkScroll(el) {
 function skillsEffect() {
   if (!checkScroll(skills_wrap)) return;
   skills_bars.forEach((skill) => (skill.style.width = skill.dataset.progress));
-}
-
-function countUp() {
-  if (!checkScroll(records_wrap)) return;
-  records_numbers.forEach((numb) => {
-    const updateCount = () => {
-      let currentNum = +numb.innerText;
-      let maxNum = +numb.dataset.num;
-      let speed = 100;
-      const increment = Math.ceil(maxNum / speed);
-
-      if (currentNum < maxNum) {
-        numb.innerText = currentNum + increment;
-        setTimeout(updateCount, 1);
-      } else {
-        numb.innerText = maxNum;
-      }
-    };
-
-    setTimeout(updateCount, 400);
-  });
 }
 
 var mySwiper = new Swiper(".swiper-container", {

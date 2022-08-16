@@ -11,7 +11,7 @@
     <meta name="msapplication-TileColor" content="#603cba">
     <meta name="theme-color" content="#ffffff">
     <meta name="description" content="Desenvolvendo Sistemas e Sites.">
-    <title>Web Developer - TechDelas</title>
+    <title>Suporte Smartphone - TechDelas</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
@@ -85,24 +85,24 @@
         <section class="services section" id="services" style="padding: 0 7rem;">
             <div class="cards">
               <div class="card-wrap" style="text-align: -webkit-center;">
-                <div class="card" data-card="Web Developer" id="dados" style="width: 80%; max-width: none;
+                <div class="card" data-card="Suporte Smartphone" id="dados" style="width: 80%; max-width: none;
             ">
                   <div class="card-content z-index">
-                    <img src="./img/icons/internet.png" class="icon" alt="" />
-                    <h3 class="title-sm">Web Developer</h3>
+                    <img src="./img/icons/repairing.png" class="icon" alt="" />
+                    <h3 class="title-sm">Suporte Smartphone</h3>
                     <br>
                       <div class="slideshow-container">
   
                           <div class="mySlides fade">
-                              <img src="img/services/developer/pexels-photo-3861972.jpeg" class="img-fade">
+                              <img src="img/services/smartphone/istockphoto-1125323600-170667a.jpg" class="img-fade">
                           </div>
                           
                           <div class="mySlides fade">
-                              <img src="img/services/developer/pexels-photo-1181271.png" class="img-fade">
+                              <img src="img/services/smartphone/istockphoto-1183921783-612x612.jpg" class="img-fade">
                           </div>
                           
                           <div class="mySlides fade">
-                              <img src="img/services/developer/pexels-photo-270348.jpeg" class="img-fade">
+                              <img src="img/services/smartphone/the-technician-holding-a-screwdriver-a-mobile-phone-repair-closeup-inside-cell-phone-with-a-fixing-battery-from-a-broken-service-shop-.jpg" class="img-fade">
                           </div>
                       
                       </div>
@@ -114,24 +114,21 @@
                       </div>
                     <div class="text descriptio">
                       <p style="text-align: justify;">
-                        Criação de Sites para seu negócio, páginas de Landing Page para melhor visibilidade para projetos ou empresas, Linktree para gerenciamento de redes sociais, Sistema de Cadastro para melhor controle de usuários em sites, Sistema de Formulário para melhor filtragem de informações em questionários ou avaliações, Customização e Design Web para sites com API ou sistemas mais complexos.
+                        Troca de carcaça de seu aparelho Smartphone, reparo em botões de Ligar/Desligar e Volumes de seu aparelho, Troca de Bateria para manter seu celular funcionando 100%, troca de Tela, Display e Touch de seu aparelho para assim evitar possíveis danos futuros.
                       </p>
                       <br>
                       <div style="display: grid; justify-content: center;">
                         <li>
-                            Linktree
+                            Troca de Carcaça
                         </li>
                         <li>
-                            Landing Page
+                            Conserto botão de Power e Volumes
                         </li>
                         <li>
-                            Sistema de Cadastro
+                            Troca de Bateria
                         </li>
                         <li>
-                            Sistema de Formulário
-                        </li>
-                        <li>
-                            Designer para Sistemas Complexos
+                            Troca de Tela
                         </li>
                       </div>
                     </div>

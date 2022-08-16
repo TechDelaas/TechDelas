@@ -11,7 +11,7 @@
     <meta name="msapplication-TileColor" content="#603cba">
     <meta name="theme-color" content="#ffffff">
     <meta name="description" content="Desenvolvendo Sistemas e Sites.">
-    <title>Web Developer - TechDelas</title>
+    <title>Suporte Desktop - TechDelas</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
@@ -85,24 +85,24 @@
         <section class="services section" id="services" style="padding: 0 7rem;">
             <div class="cards">
               <div class="card-wrap" style="text-align: -webkit-center;">
-                <div class="card" data-card="Web Developer" id="dados" style="width: 80%; max-width: none;
+                <div class="card" data-card="Suporte Desktop" id="dados" style="width: 80%; max-width: none;
             ">
                   <div class="card-content z-index">
-                    <img src="./img/icons/internet.png" class="icon" alt="" />
-                    <h3 class="title-sm">Web Developer</h3>
+                    <img src="./img/icons/settings.png" class="icon" alt="" />
+                    <h3 class="title-sm">Suporte Desktop</h3>
                     <br>
                       <div class="slideshow-container">
   
                           <div class="mySlides fade">
-                              <img src="img/services/developer/pexels-photo-3861972.jpeg" class="img-fade">
+                              <img src="img/services/desktop/7e592591cdbfacb909d720572e396b1f.jpg" class="img-fade">
                           </div>
                           
                           <div class="mySlides fade">
-                              <img src="img/services/developer/pexels-photo-1181271.png" class="img-fade">
+                              <img src="img/services/desktop/123rf_Norasit_Kaewsai.png" class="img-fade">
                           </div>
                           
                           <div class="mySlides fade">
-                              <img src="img/services/developer/pexels-photo-270348.jpeg" class="img-fade">
+                              <img src="img/services/desktop/49bd6361a1.png" class="img-fade">
                           </div>
                       
                       </div>
@@ -114,24 +114,21 @@
                       </div>
                     <div class="text descriptio">
                       <p style="text-align: justify;">
-                        Criação de Sites para seu negócio, páginas de Landing Page para melhor visibilidade para projetos ou empresas, Linktree para gerenciamento de redes sociais, Sistema de Cadastro para melhor controle de usuários em sites, Sistema de Formulário para melhor filtragem de informações em questionários ou avaliações, Customização e Design Web para sites com API ou sistemas mais complexos.
+                          Formatação e Instalação de Sistema Operacional para seu Computador Pessoal ou Notebook, Manutenção de Hardware, Limpeza e Otimização de Sistema Operacional para deixar seu computador mais rápido, Instalação de Office e Programas de forma correta, Ativação Original de Windows.
                       </p>
                       <br>
                       <div style="display: grid; justify-content: center;">
                         <li>
-                            Linktree
+                          Limpeza de Hardware e Software
                         </li>
                         <li>
-                            Landing Page
+                          Formatação e Instalação de Sistema
                         </li>
                         <li>
-                            Sistema de Cadastro
+                          Ativação de Windows
                         </li>
                         <li>
-                            Sistema de Formulário
-                        </li>
-                        <li>
-                            Designer para Sistemas Complexos
+                          Instalação de Office e Programas
                         </li>
                       </div>
                     </div>

@@ -1,1046 +1,576 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
-    <link rel="manifest" href="img/favicon/site.webmanifest">
-    <link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#5bbad5">
-    <meta name="msapplication-TileColor" content="#603cba">
-    <meta name="theme-color" content="#ffffff">
-    <meta name="description" content="Desenvolvendo Sistemas e Sites.">
-    <title>TechDelas</title>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/swiper/swiper-bundle.min.css"
-    />
-    <link rel="stylesheet" href="./css/style.css" />
-  </head>
-  <body>
-    <main>
-      <header id="header">
-        <div class="overlay overlay-lg">
-          <img src="./img/shapes/square.png" class="shape square" alt="" />
-          <img src="./img/shapes/circle.png" class="shape circle" alt="" />
-          <img
-            src="./img/shapes/half-circle.png"
-            class="shape half-circle1"
-            alt=""
-          />
-          <img
-            src="./img/shapes/half-circle.png"
-            class="shape half-circle2"
-            alt=""
-          />
-          <img src="./img/shapes/x.png" class="shape xshape" alt="" />
-          <img src="./img/shapes/wave.png" class="shape wave wave1" alt="" />
-          <img src="./img/shapes/wave.png" class="shape wave wave2" alt="" />
-          <img src="./img/shapes/triangle.png" class="shape triangle" alt="" />
-          <img src="./img/shapes/letters.png" class="letters" alt="" />
-          <img src="./img/shapes/points1.png" class="points points1" alt="" />
-        </div>
 
-        <nav>
-          <div class="container">
-            <a href="index.html">
-              <div class="logo">
-                <img src="./img/logo.png" alt="" />
-              </div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Transformando ideias em realidade digital através do Desenvolvimento de Software e Web">
+    <link rel="shortcut icon" href="./assets/img/favicon/favicon-32x32.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.lineicons.com/4.0/lineicons.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>
+        TechDelas
+    </title>
+</head>
+
+<body>
+    <header class="header" id="header">
+        <nav class="nav container padd-15">
+            <a href="" class="nav-logo">
+                <h2>
+                    TechDelas
+                </h2>
             </a>
+            <div class="nav-menu" id="nav-menu">
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="#home" class="nav-link active-link">
+                            Inicio
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#about" class="nav-link">
+                            Sobre Nós
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#services" class="nav-link">
+                            Serviços
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#portfolio" class="nav-link">
+                            Portfolio
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#feedbacks" class="nav-link">
+                            Feedbacks
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contact" class="nav-link">
+                            Contato
+                        </a>
+                    </li>
+                </ul>
 
-            <div class="links">
-              <ul>
-                <li>
-                  <a href="#header">Início</a>
-                </li>
-                <li>
-                  <a href="#portfolio">Portfólio</a>
-                </li>
-                <li>
-                  <a href="#about">Sobre</a>
-                </li>
-                <li>
-                  <a href="#testimonials">Feedbacks</a>
-                </li>
-                <li>
-                  <a href="#contact">Contato</a>
-                </li>
-                <li>
-                  <a href="#services" class="active">Serviços</a>
-                </li>
-              </ul>
+                <div class="nav-close" id="nav-close">
+                    <i class="lni lni-close"></i>
+                </div>
             </div>
 
-            <div class="hamburger-menu">
-              <div class="bar"></div>
+            <div class="nav-btns">
+                <i class="lni lni-pallet change-theme" id="theme-button"></i>
+                <div class="nav-toggle" id="nav-toggle">
+                    <i class="lni lni-grid-alt"></i>
+                </div>
             </div>
-          </div>
         </nav>
+    </header>
 
-        <div class="header-content">
-          <div class="container grid-2">
-            <div class="column-1">
-              <h1 class="header-title">TechDelas</h1>
-              <p class="text">
-                Somos uma agência de desenvolvimento em busca de trazer o melhor da internet para o seu negócio.
-              </p>
-              <a href="#services" class="btn">Serviços</a>
+    <main class="main-content">
+        <section class="home" id="home">
+            <div class="container">
+                <div class="intro">
+                    <div id="images">
+                        <img src="./assets/img/developers/Alice.jpeg" alt="Alice Developer">
+                        <img src="./assets/img/developers/Raquel.png" alt="Raquel Developer">
+                    </div>
+
+                    <h1>
+                        TechDelas
+                    </h1>
+                    <span>
+                        Transformando ideias em realidade digital através do
+                        <span class="info-text">Desenvolvimento de Software e Web</span>.
+                    </span>
+
+                    <ul class="social-icons">
+                        <li>
+                            <a href="https://github.com/TechDelaas" target="_blank">
+                                <i class="lni lni-github-original"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/techdelasofc/" target="_blank">
+                                <i class="lni lni-instagram-original"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://wa.me/5513996561657" target="_blank">
+                                <i class="lni lni-whatsapp"></i>
+                            </a>
+                        </li>
+                    </ul>
+
+                    <div>
+                        <a href="https://wa.me/5513996561657" class="btn btn-default">
+                            Contate-nos
+                        </a>
+                    </div>
+
+                    <div class="scroll-down">
+                        <a href="#about" class="mouse-wrapper">
+                            <span>
+                                Conheça Mais
+                            </span>
+                            <span class="mouse">
+                                <span class="wheel"></span>
+                            </span>
+                        </a>
+                    </div>
+                </div>
             </div>
+        </section>
 
-            <div class="column-2 image">
-              <img
-                src="./img/shapes/points2.png"
-                class="points points2"
-                alt=""
-              />
-              <!-- <img src="./img/person.png" class="img-element z-index" alt="" /> -->
-              <img src="video/personn.gif" >
+        <section class="about section" id="about">
+            <div class="container">
+                <h2 class="section-title padd-15">
+                    Sobre Nós
+                </h2>
+                <div class="row">
+                    <div class="about-img padd-15">
+                        <img src="./assets/img/developers/developers2.png" alt="Developers">
+                    </div>
+                    <div class="about-content padd-15">
+                        <div class="rounded">
+                            <div class="row">
+                                <div class="about-text padd-15">
+                                    <p>
+                                        Rompendo barreiras e trazendo um toque feminino para o mundo da tecnologia, nós
+                                        nascemos para transformar ideias em realidade digital. Especializadas em
+                                        Desenvolvimento Web e Software para a Internet, além de oferecer manutenção de
+                                        computadores e reparo de celulares, estamos aqui para impulsionar pessoas rumo
+                                        ao sucesso.
+                                        <br>
+                                        Combinando expertise técnica com uma abordagem única e sensível, estamos prontas
+                                        para ajudar você a atingir seus objetivos de negócios e deixar sua marca no
+                                        universo digital. Junte-se a nós e abrace a inovação com um toque feminino.
+                                    </p>
+
+                                    <div>
+                                        <a href="https://wa.me/5513996561657" class="btn btn-default">
+                                            Contate-nos
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
-        </div>
-      </header>
+        </section>
 
-      <section class="services section" id="services">
-        <div class="container">
-          <div class="section-header">
-            <h3 class="title" data-title="Conheça os">Serviços</h3>
-            <p class="text">
-              Encontre os melhores serviços para o seu negócio.
-            </p>
-          </div>
-
-          <div class="cards">
-            <!-- <a href="desktop.html">              
-              <div class="card-wrap">
-                <img
-                  src="./img/shapes/points3.png"
-                  class="points points1 points-sq"
-                  alt=""
-                />
-                <div class="card" data-card="PC">
-                  <div class="card-content z-index">
-                    <img src="./img/icons/settings.png" class="icon" alt="" />
-                    <h3 class="title-sm">Suporte Desktop</h3>
-                    <div class="text descriptio">
-                      <div style="display: grid; justify-content: center;">
-                        <li>
-                          Limpeza de Hardware e Software
-                        </li>
-                        <li>
-                          Formatação e Instalação de Sistema
-                        </li>
-                        <li>
-                          Ativação de Windows
-                        </li>
-                        <li>
-                          Instalação de Office e Programas
-                        </li>
-                      </div>
+        <section class="services section" id="services">
+            <div class="container">
+                <h2 class="section-title padd-15">
+                    Serviços
+                </h2>
+                <div class="row">
+                    <div class="service-item padd-15">
+                        <div class="service-item-inner" style="background: rgb(249, 123, 139);">
+                            <img src="./assets/img/services/web.png" alt="Desenvolvimento Web">
+                            <h3>
+                                Web
+                            </h3>
+                            <p>
+                                Desenvolvemos páginas web impressionantes, unindo criatividade e funcionalidade para impulsionar sua presença online. Com um toque feminino, criamos uma presença digital única e cativante. Destaque-se na web com nossos serviços especializados!
+                            </p>
+                        </div>
                     </div>
-                    <br>
-                    <a href="desktop.html" class="btn small">Saiba Mais</a>
-                  </div>
-                </div>
-              </div>
-            </a> -->
-
-            <a href="developer.html">
-              <div class="card-wrap">
-                <div class="card" data-card="Code">
-                  <div class="card-content z-index">
-                    <img src="./img/icons/internet.png" class="icon" alt="" />
-                    <h3 class="title-sm">Web Developer</h3>
-                    <div class="text descriptio">
-                      <div style="display: grid; justify-content: center;">
-                        <li>
-                          Linktree
-                        </li>
-                        <li>
-                          Landing Page
-                        </li>
-                        <li>
-                          Sistema de Cadastro
-                        </li>
-                        <li>
-                          Sistema de Formulário
-                        </li>
-                        <li>
-                          Designer para Sistemas Complexos
-                        </li>
-                      </div>
+                    <div class="service-item padd-15">
+                        <div class="service-item-inner" style="background: rgb(108, 108, 229);">
+                            <img src="./assets/img/services/software.png" alt="Desenvolvimento de Software">
+                            <h3>
+                                Software
+                            </h3>
+                            <p>
+                                Com foco em desenvolvimento de software, IA's e bots, oferecendo soluções inovadoras para impulsionar seu negócio. Combinando expertise técnica e criatividade, criamos sistemas inteligentes e interativos que elevam a eficiência e a experiência do usuário.
+                            </p>
+                        </div>
                     </div>
-                    <br>
-                    <a href="developer.html" class="btn small">Saiba Mais</a>
-                  </div>
-                </div>
-              </div>
-            </a>
-
-            <!-- <a href="smartphone.html">
-              <div class="card-wrap">
-                <img
-                  src="./img/shapes/points3.png"
-                  class="points points2 points-sq"
-                  alt=""
-                />
-                <div class="card" data-card="Phone">
-                  <div class="card-content z-index">
-                    <img src="./img/icons/repairing.png" class="icon" alt="" />
-                    <h3 class="title-sm">Suporte Smartphone</h3>
-                    <div class="text descriptio">
-                      <div style="display: grid; justify-content: center;">
-                        <li>
-                          Troca de Carcaça
-                        </li>
-                        <li>
-                          Conserto botão de Power e Volumes
-                        </li>
-                        <li>
-                          Troca de Bateria
-                        </li>
-                        <li>
-                          Troca de Tela
-                        </li>
-                      </div>
+                    <div class="service-item padd-15">
+                        <div class="service-item-inner" style="background: rgb(38, 173, 33);">
+                            <img src="./assets/img/services/links.png" alt="Página de Links">
+                            <h3>
+                                Links
+                            </h3>
+                            <p>
+                                Desenvolvimento de páginas links, proporcionando uma experiência ágil e prática para encontrar rapidamente suas redes sociais e outros recursos importantes. Criamos interfaces intuitivas e visualmente atrativas, conectando você e seu público de maneira eficiente.
+                            </p>
+                        </div>
                     </div>
-                    <br>
-                    <a href="smartphone.html" class="btn small">Saiba Mais</a>
-                  </div>
                 </div>
-              </div>
-            </a> -->
-
-            <a href="social-media.html">
-              <div class="card-wrap">
-                <img
-                  src="./img/shapes/points3.png"
-                  class="points points2 points-sq"
-                  alt=""
-                />
-                <div class="card" data-card="Phone">
-                  <div class="card-content z-index">
-                    <img src="./img/icons/megafone.png" class="icon" alt="" />
-                    <h3 class="title-sm">Social Media</h3>
-                    <div class="text descriptio">
-                      <div style="display: grid; justify-content: center;">
-                        <li>
-                          Criação de Conteúdo Digital
-                        </li>
-                        <li>
-                          Interação com o público
-                        </li>
-                        <li>
-                          Agendamento de posts
-                        </li>
-                        <li>
-                          Planejamento de Conteúdo
-                        </li>
-                        <li>
-                          Monitoramento de Rede Social
-                        </li>
-                      </div>
-                    </div>
-                    <br>
-                    <a href="social-media.html" class="btn small">Saiba Mais</a>
-                  </div>
-                </div>
-              </div>
-            </a>
-            
-          </div>
-        </div>
-      </section>
-
-      <section class="portfolio section" id="portfolio">
-        <div class="background-bg">
-          <div class="overlay overlay-sm">
-            <img
-              src="./img/shapes/half-circle.png"
-              class="shape half-circle1"
-              alt=""
-            />
-            <img
-              src="./img/shapes/half-circle.png"
-              class="shape half-circle2"
-              alt=""
-            />
-            <img src="./img/shapes/square.png" class="shape square" alt="" />
-            <img src="./img/shapes/wave.png" class="shape wave" alt="" />
-            <img src="./img/shapes/circle.png" class="shape circle" alt="" />
-            <img
-              src="./img/shapes/triangle.png"
-              class="shape triangle"
-              alt=""
-            />
-            <img src="./img/shapes/x.png" class="shape xshape" alt="" />
-          </div>
-        </div>
-
-        <div class="container">
-          <div class="section-header">
-            <h3 class="title" data-title="Nossos Trabalhos de Developer">Portfólio</h3>
-          </div>
-
-          <div class="section-body">
-            <div class="filter">
-              <button class="filter-btn active" data-filter="*">Todos</button>
-              <button class="filter-btn" data-filter=".ui">
-                Linktree
-              </button>
-              <button class="filter-btn" data-filter=".webdev">
-                Designer Sistemas
-              </button>
-              <button class="filter-btn" data-filter=".appdev">
-                Landing Page
-              </button>
-              <!-- <button class="filter-btn" data-filter=".logo-design">
-                Logo Design
-              </button> -->
-            </div>
-
-            <div class="grid">
-              <!-- <div class="grid-item logo-design">
-                <div class="gallery-image">
-                  <img src="./img/portfolio/port1.jpg" alt="" />
-                  <div class="img-overlay">
-                    <div class="plus"></div>
-                    <div class="img-description">
-                      <h3>Logo Design</h3>
-                      <h5>View Demo</h5>
-                    </div>
-                  </div>
-                </div>
-              </div> -->
-              <div class="grid-item webdev">
-                <div class="gallery-image">
-                  <a href="pdf/LocalTech_Site_1.pdf" target="_blank">
-                    <img src="./img/projects/LocalTech_Site_1.png" alt="" />
-                    <div class="img-overlay">
-                      <div class="plus"></div>
-                      <div class="img-description">
-                        <h3>LocalTech</h3>
-                        <h5>Designer Sistemas</h5>
-                      </div>
-                    </div>
-                  </a>
-                </div>
-              </div>
-              <div class="grid-item ui">
-                <div class="gallery-image">
-                  <a href="pdf/Linktree_TechDelas.pdf" target="_blank">
-                    <img src="./img/projects/TechDelas_Linktree_1.PNG" alt="" />
-                    <div class="img-overlay">
-                      <div class="plus"></div>
-                      <div class="img-description">
-                        <h3>TechDelas</h3>
-                        <h5>Linktree</h5>
-                      </div>
-                    </div>
-                  </a>
-                </div>
-              </div>
-              <div class="grid-item ui">
-                <div class="gallery-image">
-                  <a href="pdf/Linktree_Rennata.pdf" target="_blank">
-                    <img src="./img/projects/Rennata_Linktree_1.PNG" alt="" />
-                    <div class="img-overlay">
-                      <div class="plus"></div>
-                      <div class="img-description">
-                        <h3>Rennata Raniele</h3>
-                        <h5>Linktree</h5>
-                      </div>
-                    </div>
-                  </a>
-                </div>
-              </div>
-              <!-- <div class="grid-item logo-design">
-                <div class="gallery-image">
-                  <img src="./img/portfolio/port5.jpg" alt="" />
-                  <div class="img-overlay">
-                    <div class="plus"></div>
-                    <div class="img-description">
-                      <h3>Logo Design</h3>
-                      <h5>View Demo</h5>
-                    </div>
-                  </div>
-                </div>
-              </div> -->
-              <div class="grid-item appdev">
-                <div class="gallery-image">
-                  <a href="pdf/Rennata_Site_1.pdf" target="_blank">
-                    <img src="./img/projects/Rennata_Site_1.png" alt="" />
-                    <div class="img-overlay">
-                      <div class="plus"></div>
-                      <div class="img-description">
-                        <h3>Rennata Raniele</h3>
-                        <h5>Landing Page</h5>
-                      </div>
-                    </div>
-                  </a>
-                </div>
-              </div>
-              <!-- <div class="grid-item logo-design">
-                <div class="gallery-image">
-                  <img src="./img/portfolio/port7.jpg" alt="" />
-                  <div class="img-overlay">
-                    <div class="plus"></div>
-                    <div class="img-description">
-                      <h3>Logo Design</h3>
-                      <h5>View Demo</h5>
-                    </div>
-                  </div>
-                </div>
-              </div> -->
-              <div class="grid-item appdev">
-                <div class="gallery-image">
-                  <a href="pdf/Rennata_Site_2.pdf" target="_blank">
-                    <img src="./img/projects/Rennata_Site_2.png" alt="" />
-                    <div class="img-overlay">
-                      <div class="plus"></div>
-                      <div class="img-description">
-                        <h3>Rennata Raniele</h3>
-                        <h5>Landing Page</h5>
-                      </div>
-                    </div>
-                  </a>
-                </div>
-              </div>
-              <div class="grid-item webdev">
-                <div class="gallery-image">
-                  <a href="pdf/Biblioteca_Site_1.pdf" target="_blank">
-                    <img src="./img/projects/Biblioteca_Site_1.png" alt="" />
-                    <div class="img-overlay">
-                      <div class="plus"></div>
-                      <div class="img-description">
-                        <h3>Biblioteca Evolution</h3>
-                        <h5>Designer Sistemas</h5>
-                      </div>
-                    </div>
-                  </a>
-                </div>
-              </div>
-              <div class="grid-item appdev">
-                <div class="gallery-image">
-                  <a href="pdf/Rennata_Site_3.pdf" target="_blank">
-                    <img src="./img/projects/Rennata_Site_3.png" alt="" />
-                    <div class="img-overlay">
-                      <div class="plus"></div>
-                      <div class="img-description">
-                        <h3>Rennata Raniele</h3>
-                        <h5>Landing Page</h5>
-                      </div>
-                    </div>
-                  </a>
-                </div>
-              </div>
-              <div class="grid-item webdev">
-                <div class="gallery-image">
-                  <a href="pdf/LocalTech_Site_2.pdf" target="_blank">
-                    <img src="./img/projects/LocalTech_Site_2.png" alt="" />
-                    <div class="img-overlay">
-                      <div class="plus"></div>
-                      <div class="img-description">
-                        <h3>LocalTech</h3>
-                        <h5>Designer Sistemas</h5>
-                      </div>
-                    </div>
-                  </a>
-                </div>
-              </div>
-              <div class="grid-item appdev">
-                <div class="gallery-image">
-                  <!-- <a href="" target="_blank"> -->
-                    <img src="./img/projects/Nossa_Padoka_Site_1.png" alt="" />
-                    <div class="img-overlay">
-                      <div class="plus"></div>
-                      <div class="img-description">
-                        <h3>Nossa Padoka</h3>
-                        <h5>Landing Page</h5>
-                      </div>
-                    </div>
-                  <!-- </a> -->
-                </div>
-              </div>
-              <div class="grid-item webdev">
-                <div class="gallery-image">
-                  <!-- <a href="" target="_blank"> -->
-                    <img src="./img/projects/Condor_Site_1.png" alt="" />
-                    <div class="img-overlay">
-                      <div class="plus"></div>
-                      <div class="img-description">
-                        <h3>Condor</h3>
-                        <h5>Designer Sistemas</h5>
-                      </div>
-                    </div>
-                  <!-- </a> -->
-                </div>
-              </div>
-              <div class="grid-item appdev">
-                <div class="gallery-image">
-                  <!-- <a href="" target="_blank"> -->
-                    <img src="./img/projects/Academia_Site_1.png" alt="" />
-                    <div class="img-overlay">
-                      <div class="plus"></div>
-                      <div class="img-description">
-                        <h3>Academia</h3>
-                        <h5>Landing Page</h5>
-                      </div>
-                    </div>
-                  <!-- </a> -->
-                </div>
-              </div>
-              <div class="grid-item appdev">
-                <div class="gallery-image">
-                  <!-- <a href="" target="_blank"> -->
-                    <img src="./img/projects/Space_Site_1.png" alt="" />
-                    <div class="img-overlay">
-                      <div class="plus"></div>
-                      <div class="img-description">
-                        <h3>Space</h3>
-                        <h5>Landing Page</h5>
-                      </div>
-                    </div>
-                  <!-- </a> -->
-                </div>
-              </div>
-            </div>
-            <!-- <div class="more-folio">
-              <a class="btn">More Folio</a>
-            </div> -->
-          </div>
-        </div>
-      </section>
-
-      <section class="about section" id="about">
-        <div class="container">
-          <div class="section-header">
-            <h3 class="title" data-title="Conheça-nos">Quem Somos</h3>
-          </div>
-
-          <div class="section-body grid-2">
-            <div class="column-1">
-              <h3 class="title-sm">Olá</h3>
-              <p class="text">
-                Nascemos com intuito de trazer um toque feminino para a área de TI.
-                Somos especializadas em criação de sites e sistemas para a internet, manutenção de computadores e reparo de celulares, nosso maior foco é ajudar pessoas e empresas a atingirem os seus objetivos de negócios.
-              </p>
-              <div class="skills">
-                <!-- <div class="skill html">
-                  <h3 class="skill-title">Help Desk</h3>
-                  <div class="skill-bar">
-                    <div class="skill-progress" data-progress="100%"></div>
-                  </div>
-                </div> -->
-                <div class="skill html">
-                  <h3 class="skill-title">HTML</h3>
-                  <div class="skill-bar">
-                    <div class="skill-progress" data-progress="100%"></div>
-                  </div>
-                </div>
-                <div class="skill css">
-                  <h3 class="skill-title">CSS</h3>
-                  <div class="skill-bar">
-                    <div class="skill-progress" data-progress="100%"></div>
-                  </div>
-                </div>
-                <div class="skill js">
-                  <h3 class="skill-title">JavaScript</h3>
-                  <div class="skill-bar">
-                    <div class="skill-progress" data-progress="100%"></div>
-                  </div>
-                </div>
-                <div class="skill js">
-                  <h3 class="skill-title">Social Media</h3>
-                  <div class="skill-bar">
-                    <div class="skill-progress" data-progress="100%"></div>
-                  </div>
-                </div>
-                <div class="skill js">
-                  <h3 class="skill-title">PHP</h3>
-                  <div class="skill-bar">
-                    <div class="skill-progress" data-progress="100%"></div>
-                  </div>
-                </div>
-                <div class="skill js">
-                  <h3 class="skill-title">MySQL</h3>
-                  <div class="skill-bar">
-                    <div class="skill-progress" data-progress="100%"></div>
-                  </div>
-                </div>
-                <div class="skill js">
-                  <h3 class="skill-title">Ionic</h3>
-                  <div class="skill-bar">
-                    <div class="skill-progress" data-progress="100%"></div>
-                  </div>
-                </div>
-              </div>
-              <a href="https://github.com/TechDelaas" target="_blank" class="btn">Conheça o GitHub</a>
-            </div>
-
-            <div class="column-2 image">
-              <img src="./img/shapes/points4.png" class="points" alt="" />
-              <img src="./img/personn.png" class="z-index" alt="" />
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="records">
-        <div class="overlay overlay-sm">
-          <img src="./img/shapes/square.png" alt="" class="shape square1" />
-          <img src="./img/shapes/square.png" alt="" class="shape square2" />
-          <img src="./img/shapes/circle.png" alt="" class="shape circle" />
-          <img
-            src="./img/shapes/half-circle.png"
-            alt=""
-            class="shape half-circle"
-          />
-          <img src="./img/shapes/wave.png" alt="" class="shape wave wave1" />
-          <img src="./img/shapes/wave.png" alt="" class="shape wave wave2" />
-          <img src="./img/shapes/x.png" alt="" class="shape xshape" />
-          <img src="./img/shapes/triangle.png" alt="" class="shape triangle" />
-        </div>
-
-        <div class="container">
-          <!-- <div class="wrap">
-            <div class="record-circle">
-              <h2 class="number" data-num="235">0</h2>
-              <h4 class="sub-title">Projects</h4>
-            </div>
-          </div> -->
-
-          <div class="wrap">
-            <!-- <div class="record-circle active">
-              <img src="img/developers/Alice.jpeg" style="border-radius: 100px;">
-            </div> -->
-            <br>
-            <div style="color: white;">
-              <h2 class="number">Alice Santos</h2>
-              <h4 class="sub-title">Web Designer</h4>
-              <br>
-              <a href="https://www.instagram.com/alice_santoss013/" target="_blank">
-                <i style="font-size: x-large; color: white;" class="fa-brands fa-linkedin"></i>
-              </a>
-              &#160;&#160;
-              <a href="https://www.linkedin.com/in/alice-santos-070a81206/" target="_blank">
-                <i style="font-size: x-large; color: white;" class="fa-brands fa-instagram"></i>
-              </a>
-            </div>
-          </div>
-
-          <div class="wrap">
-            <!-- <div class="record-circle active">
-              <img src="img/developers/Raquel.png" style="border-radius: 100px;">
-            </div> -->
-            <br>
-            <div style="color: white;">
-              <h2 class="number">Raquel Stefany</h2>
-              <h4 class="sub-title">Developer</h4>
-              <br>
-              <a href="https://www.instagram.com/raquelrodriguez013/" target="_blank">
-                <i style="font-size: x-large; color: white;" class="fa-brands fa-linkedin"></i>
-              </a>
-              &#160;&#160;
-              <a href="https://www.linkedin.com/in/raquel-stefany-generoso-rodrigues-a51a7a201/" target="_blank">
-                <i style="font-size: x-large; color: white;" class="fa-brands fa-instagram"></i>
-              </a>
-            </div>
-          </div>
-
-          <!-- <div class="wrap">
-            <div class="record-circle">
-              <h2 class="number" data-num="368">0</h2>
-              <h4 class="sub-title">Awards</h4>
-            </div>
-          </div> -->
-        </div>
-      </section>
-
-      <section class="testimonials section" id="testimonials">
-        <div class="container">
-          <div class="section-header">
-            <h3 class="title" data-title="Avaliações">Feedbacks</h3>
-          </div>
-
-          <div class="testi-content grid-2">
-            <div class="column-1 reviews">
-              <div class="swiper-container">
-                <div class="swiper-wrapper">
-                  <div class="swiper-slide review">
-                    <i class="fas fa-quote-left quote"></i>
-                    <div class="rate">
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                    </div>
-
-                    <p class="review-text">
-                      Preciso dizer que o trabalho da Techdelas é simplesmente incrível!
-                      <br>
-                      Elas são extremamente competentes e detalhistas em cada entrega, superando todas as minhas expectativas em cada site criado!
-                      <br>
-                      Recomendo de olhos fechados.
+                <div class="text padd-15">
+                    <p>
+                        Procurando um trabalho personalizado? <a href="https://wa.me/5513996561657">Clique aqui</a> para
+                        entrar em contato conosco! 🥰
                     </p>
-
-                    <div class="review-info">
-                      <h3 class="review-name">Rennata Raniele, Psicoterapeuta</h3>
-                      <h5 class="review-job">@rennataraniele</h5>
-                    </div>
-                  </div>
-
-                  <div class="swiper-slide review">
-                    <i class="fas fa-quote-left quote"></i>
-                    <div class="rate">
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                    </div>
-
-                    <p class="review-text">
-                      Sim, achei muito bom e gostei que você trabalha com muitos detalhes.
-                      <br>
-                      Minhas vendas cresceram bastante.
-                    </p>
-
-                    <div class="review-info">
-                      <h3 class="review-name">Caio, Certa</h3>
-                      <h5 class="review-job">@emp.certa</h5>
-                    </div>
-                  </div>
-
-                  <div class="swiper-slide review">
-                    <i class="fas fa-quote-left quote"></i>
-                    <div class="rate">
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                    </div>
-
-                    <p class="review-text">
-                      Queria te agradecer por todo serviço prestado e te parabenizar pelo trabalho.
-                      <br>
-                      Amei as peças para story e feed que fez para mim. E estou apaixonada por minha bonequinha! Todos amaram e elogiaram!
-                      <br>
-                      Com certeza vou te indicar sempre e seguir nossa parceria ♥
-                    </p>
-
-                    <div class="review-info">
-                      <h3 class="review-name">Carol, C-Fit</h3>
-                      <h5 class="review-job">@cfitmarmitas_</h5>
-                    </div>
-                  </div>
-
-                  <div class="swiper-slide review">
-                    <i class="fas fa-quote-left quote"></i>
-                    <div class="rate">
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                    </div>
-
-                    <p class="review-text">
-                      Meu amor, só gratidão por você e pelo ótimo trabalho que realizou, estamos muito satisfeitos! Obrigada 🙏🏼
-                    </p>
-
-                    <div class="review-info">
-                      <h3 class="review-name">Beatriz França</h3>
-                      <h5 class="review-job">@anonimo</h5>
-                    </div>
-                  </div>
-
-                  <div class="swiper-slide review">
-                    <i class="fas fa-quote-left quote"></i>
-                    <div class="rate">
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                    </div>
-
-                    <p class="review-text">
-                      MEU DEUUUS TO CHOCADAAA!!!
-                      <br>
-                      Nem sei o que dizer, muito obrigada ❤️❤️❤️❤️
-                      <br>
-                      Tá muito linda e prática!
-                    </p>
-
-                    <div class="review-info">
-                      <h3 class="review-name">Belle Castelão</h3>
-                      <h5 class="review-job">@anonimo</h5>
-                    </div>
-                  </div>
-
-                  <div class="swiper-slide review">
-                    <i class="fas fa-quote-left quote"></i>
-                    <div class="rate">
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                    </div>
-
-                    <p class="review-text">
-                      MUIIITOO OBRIGADA
-                      <br>
-                      Eu precisava exatamente dessa lead page.
-                      <br>
-                      Só em ter uma página tão linda, com certeza meu lançamento vai bater 5D❤️❤️❤️❤️❤️
-                      <br>
-                      Muiiitoo obrigada meninas!!
-                    </p>
-
-                    <div class="review-info">
-                      <h3 class="review-name">Anonimo</h3>
-                      <h5 class="review-job">@anonimo</h5>
-                    </div>
-                  </div>
-
-                  <div class="swiper-slide review">
-                    <i class="fas fa-quote-left quote"></i>
-                    <div class="rate">
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                    </div>
-
-                    <p class="review-text">
-                      Ótimo trabalho
-                      <br>
-                      Gostei muito,ótimo atendimento e cumpriu  o prazo
-                    </p>
-
-                    <div class="review-info">
-                      <h3 class="review-name">Allan Ximenes</h3>
-                      <h5 class="review-job">@anonimo</h5>
-                    </div>
-                  </div>
                 </div>
+            </div>
+        </section>
 
-                <div class="review-nav swiper-button-prev">
-                  <i class="fas fa-long-arrow-alt-left"></i>
+        <section class="portfolio section" id="portfolio">
+            <div class="container">
+                <h2 class="section-title padd-15">
+                    Portfolio
+                </h2>
+                <div class="row">
+                    <div class="portfolio-filter padd-15">
+                        <div class="portfolio-filter-inner">
+                            <button type="button" class="active" data-filter="all">
+                                Tudo
+                            </button>
+                            <button type="button" data-filter="web">
+                                Web
+                            </button>
+                            <button type="button" data-filter="software">
+                                Software
+                            </button>
+                            <button type="button" data-filter="links">
+                                Links
+                            </button>
+                        </div>
+                    </div>
                 </div>
-                <div class="review-nav swiper-button-next">
-                  <i class="fas fa-long-arrow-alt-right"></i>
+                <div class="row">
+                    <div class="portfolio-item padd-15" data-category="web">
+                        <div class="portfolio-item-inner">
+                            <div class="portfolio-item-thumbnail">
+                                <img src="./assets/img/projects/web/localtech.png" alt="LocalTech">
+                                <div class="mask"></div>
+                            </div>
+                            <span class="term">
+                                Web
+                            </span>
+                            <h3 class="portfolio-item-title">
+                                LocalTech
+                            </h3>
+                            <a href="./projects/localtech.html">
+                                <span class="more-button">
+                                    &hellip;
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="portfolio-item padd-15" data-category="software">
+                        <div class="portfolio-item-inner">
+                            <div class="portfolio-item-thumbnail">
+                                <img src="./assets/img/projects/software/kkldados.png" alt="KKL Dados">
+                                <div class="mask"></div>
+                            </div>
+                            <span class="term">
+                                Software
+                            </span>
+                            <h3 class="portfolio-item-title">
+                                I.A. KKL Dados
+                            </h3>
+                            <a href="./projects/kkldados.html">
+                                <span class="more-button">
+                                    &hellip;
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="portfolio-item padd-15" data-category="links">
+                        <div class="portfolio-item-inner">
+                            <div class="portfolio-item-thumbnail">
+                                <img src="./assets/img/projects/web/techdelasLinks.png" alt="TechDelas Links">
+                                <div class="mask"></div>
+                            </div>
+                            <span class="term">
+                                Web
+                            </span>
+                            <h3 class="portfolio-item-title">
+                                TechDelas - Links
+                            </h3>
+                            <a href="./projects/techdelasLinks.html">
+                                <span class="more-button">
+                                    &hellip;
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="portfolio-item padd-15" data-category="web">
+                        <div class="portfolio-item-inner">
+                            <div class="portfolio-item-thumbnail">
+                                <img src="./assets/img/projects/web/imersaoMulheresAbundantes.png" alt="I.M.A. Imersão Mulheres Abundantes">
+                                <div class="mask"></div>
+                            </div>
+                            <span class="term">
+                                Web
+                            </span>
+                            <h3 class="portfolio-item-title">
+                                I.M.A. Imersão Mulheres Abundantes
+                            </h3>
+                            <a href="./projects/ima.html">
+                                <span class="more-button">
+                                    &hellip;
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="portfolio-item padd-15" data-category="links">
+                        <div class="portfolio-item-inner">
+                            <div class="portfolio-item-thumbnail">
+                                <img src="./assets/img/projects/web/rennataRanieleLinks.png" alt="Rennata Raniele Links">
+                                <div class="mask"></div>
+                            </div>
+                            <span class="term">
+                                Web
+                            </span>
+                            <h3 class="portfolio-item-title">
+                                Rennata Raniele - Links
+                            </h3>
+                            <a href="./projects/rennataRaniele.html">
+                                <span class="more-button">
+                                    &hellip;
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="portfolio-item padd-15" data-category="web">
+                        <div class="portfolio-item-inner">
+                            <div class="portfolio-item-thumbnail">
+                                <img src="./assets/img/projects/web/mentoriaEnriqueser.png" alt="Mentoria EnriqueSer">
+                                <div class="mask"></div>
+                            </div>
+                            <span class="term">
+                                Web
+                            </span>
+                            <h3 class="portfolio-item-title">
+                                Mentoria EnriqueSer
+                            </h3>
+                            <a href="./projects/mentoriaEnriqueser.html">
+                                <span class="more-button">
+                                    &hellip;
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="portfolio-item padd-15" data-category="web">
+                        <div class="portfolio-item-inner">
+                            <div class="portfolio-item-thumbnail">
+                                <img src="./assets/img/projects/web/maeRainha.png" alt="Loja Mãe Rainha">
+                                <div class="mask"></div>
+                            </div>
+                            <span class="term">
+                                Web
+                            </span>
+                            <h3 class="portfolio-item-title">
+                                Loja Mãe Rainha
+                            </h3>
+                            <a href="./projects/maeRainha.html">
+                                <span class="more-button">
+                                    &hellip;
+                                </span>
+                            </a>
+                        </div>
+                    </div>
                 </div>
-              </div>
             </div>
+        </section>
 
-            <div class="column-2 image">
-              <img src="./img/testi.png" alt="" class="img-element" />
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="contact" id="contact">
-        <div class="container">
-          <div class="contact-box">
-            <div class="contact-info">
-              <h3 class="title">Entre em contato</h3>
-              <br>
-              <br>
-              <p class="text">
-                Ainda tem dúvidas, ou algo que queira conversar especialmente conosco? 
-              </p>
-              <br>
-              <p class="text">
-                Entre em contato conosco através de nossas redes sociais disponíveis ao lado
-              </p>
-              <br>
-              <p class="text">
-                Encontre um pouco mais sobre nossos projetos.
-              </p>
-            </div>
-
-            <div class="contact-form">
-              <h3 class="title">Contate-nos</h3>
-              <div class="information-wrap">
-                <a href="https://www.instagram.com/techdelasofc/" style="color: black;">
-                  <div class="information">
-                    <div class="contact-icon">
-                      <i class="fa-brands fa-instagram"></i>
+        <section class="section" id="feedbacks">
+            <div class="container">
+                <h2 class="section-title padd-15">
+                    Feedbacks
+                </h2>
+                <div class="swiper testimonial-wrapper">
+                    <div class="swiper-wrapper">
+                        <div class="testimonial-item swiper-slide">
+                            <div class="thumb">
+                                <img src="./assets/img/testimonials/elialdo.png" alt="Elialdo Silva">
+                            </div>
+                            <h3>
+                                Elialdo Silva
+                            </h3>
+                            <span class="subtitle">
+                                Sobre o Desenvolvimento de Software
+                            </span>
+                            <div class="comment">
+                                Bom falando sobre a I.A. que adquiri da TechDelas, só tenho coisas boas a comentar, desde o atendimento ao suporte 24hrs.
+                                A I.A. ficou muito top, gostei demais, funciona perfeitamente sem erros.
+                                <br>
+                                Eu recomendo.
+                            </div>
+                        </div>
+                        <div class="testimonial-item swiper-slide">
+                            <div class="thumb">
+                                <img src="./assets/img/testimonials/rennata.jpg" alt="Rennata Raniele">
+                            </div>
+                            <h3>
+                                Rennata Raniele
+                            </h3>
+                            <span class="subtitle">
+                                Sobre o Desenvolvimento Web
+                            </span>
+                            <div class="comment">
+                                Preciso dizer que o trabalho da TechDelas é simplesmente incrível!
+                                <br>
+                                Elas são extremamente competentes e detalhistas em cada entrega, superando todas as minhas expectativas em cada site criado!
+                                <br>
+                                Recomendo de olhos fechados.
+                            </div>
+                        </div>
                     </div>
-                    <p class="info-text">@techdelasofc</p>
-                  </div>
-                </a>
-                <br>
-                <a href="mailto:techdelas@outlook.com" style="color: black;">
-                  <div class="information">
-                    <div class="contact-icon">
-                      <i class="fa-light fa-at"></i>
-                    </div>
-                    <p class="info-text">techdelas@outlook.com</p>
-                  </div>
-                </a>
-                <br>
-                <a href="https://wa.me/message/X2RUVZJBIS2WM1" style="color: black;">
-                  <div class="information">
-                    <div class="contact-icon">
-                      <i class=""></i>
-                      <i class="fa-brands fa-whatsapp"></i>
-                    </div>
-                    <p class="info-text">(11) 91145-9568</p>
-                  </div>
-                </a>
-              </div>
+                    <div class="swiper-pagination"></div>
+                </div>
             </div>
-          </div>
-        </div>
-      </section>
+        </section>
 
-      <div>
-        <a href="https://wa.me/message/X2RUVZJBIS2WM1" class="fab" target="_blank">
-          <i style="margin-top:16px" class="fa-brands fa-whatsapp"></i>
-        </a>
-        <a href="https://www.instagram.com/techdelasofc/" class="fab" target="_blank" style="margin-bottom: 65px;">
-          <i style="margin-top:16px" class="fa-brands fa-instagram"></i>
-        </a>
-      </div>
+        <section class="contact section" id="contact">
+            <div class="container">
+                <h2 class="section-title padd-15">
+                    Contate nos
+                </h2>
+                <div class="row">
+                    <div class="contact-box padd-15">
+                        <div class="contact-data">
+                            <div class="contact-information">
+                                <h3 class="contact-subtitle">
+                                    Chame-nos no WhatsApp
+                                </h3>
+                                <span class="contact-description">
+                                    <i class="lni lni-whatsapp contact-icon"></i>
+                                    +55 (13) 99656-1657
+                                </span>
+                            </div>
+                            <div class="contact-information">
+                                <h3 class="contact-subtitle">
+                                    Procure-nos no Telegram
+                                </h3>
+                                <span class="contact-description">
+                                    <i class="lni lni-telegram-original contact-icon"></i>
+                                    @Aliceessantos
+                                </span>
+                            </div>
+                            <div class="contact-information">
+                                <h3 class="contact-subtitle">
+                                    Escreva-nos um email
+                                </h3>
+                                <span class="contact-description">
+                                    <i class="lni lni-envelope contact-icon"></i>
+                                    contato@techdelas.com.br
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <form action="https://formspree.io/f/xzblzdgo" method="post" class="contact-form padd-15">
+                        <div class="contact-inputs">
+                            <div class="contact-content">
+                                <input type="email" name="email" id="email" class="contact-input" required>
+                                <label for="email" class="contact-label">
+                                    Email
+                                </label>
+                                <span></span>
+                            </div>
+                            <div class="contact-content">
+                                <input type="text" name="assunto" id="assunto" class="contact-input" required>
+                                <label for="asunto" class="contact-label">
+                                    Assunto
+                                </label>
+                                <span></span>
+                            </div>
+                            <div class="contact-content contact-area">
+                                <textarea name="mensagem" id="mensagem" cols="30" rows="10"
+                                    class="contact-input" required></textarea>
+                                <label for="mensagem" class="contact-label">
+                                    Mensagem
+                                </label>
+                                <span></span>
+                            </div>
+                        </div>
+                        <button href="#" class="btn btn-default" type="submit">
+                            Enviar Mensagem
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
 
-      <!-- <section class="hireme" id="hireme">
-        <div class="container">
-          <h3 class="title">Let's talk about a project</h3>
-          <p class="text">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio,
-            culpa. Commodi suscipit animi officia dignissimos unde, ipsum fugiat
-            consequuntur, fugit ratione vel aperiam, similique distinctio
-            mollitia repellendus quasi rem vero!
-          </p>
-          <a class="btn">Hire me</a>
-        </div>
-      </section> -->
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-text padd-15">
+                    <p>
+                        &copy; 2023 Desenvolvido por TechDelas
+                    </p>
+                </div>
+            </div>
+        </footer>
     </main>
 
-    <footer class="footer">
-      <div class="container">
-        <div class="grid-4">
-          <div class="grid-4-col footer-about">
-            <h3 class="title-sm">Sobre Nos</h3>
-            <p class="text">
-              Nascemos com intuito de trazer um toque feminino para a área da programação.
+    <div class="customize-theme">
+        <div class="card">
+            <h2>
+                Personalize a sua experiência!
+            </h2>
+            <p>
+                Escolha as cores e o tema do seu site para uma melhor experiência.
             </p>
-          </div>
-
-          <div class="grid-4-col footer-links">
-            <h3 class="title-sm">Links</h3>
-            <ul>
-              <li>
-                <a href="#services">Serviços</a>
-              </li>
-              <li>
-                <a href="#portfolio">Portfólio</a>
-              </li>
-              <li>
-                <a href="#about">Sobre</a>
-              </li>
-              <li>
-                <a href="#testimonials">Feedbacks</a>
-              </li>
-              <li>
-                <a href="#contact">Contato</a>
-              </li>
-            </ul>
-          </div>
-
-          <div class="grid-4-col footer-links">
-            <h3 class="title-sm">Serviços</h3>
-            <ul>
-              <li>
-                <a>Web Design</a>
-              </li>
-              <li>
-                <a>Web Developer</a>
-              </li>
-              <li>
-                <a>Linktree</a>
-              </li>
-              <li>
-                <a>UI Design</a>
-              </li>
-              <li>
-                <a>Help Desk</a>
-              </li>
-            </ul>
-          </div>
-
-          <div class="grid-4-col footer-newstletter">
-            <h3 class="title-sm">Contato</h3>
-            <p class="text">
-              Entre em contato conosco.
-            </p>
-            <div class="footer-input-wrap">
-              <input type="email" class="footer-input" placeholder="techdelas@outlook.com" disabled/>
-              <a href="mailto:techdelas@outlook.com" class="input-arrow">
-                <i class="fas fa-angle-right"></i>
-              </a>
+            <div class="font-size">
+                <h3>
+                    Tamanho da fonte:
+                </h3>
+                <div>
+                    <h6>
+                        Aa
+                    </h6>
+                    <div class="choose-size">
+                        <span class="font-size-1"></span>
+                        <span class="font-size-2"></span>
+                        <span class="font-size-3 active"></span>
+                        <span class="font-size-4"></span>
+                    </div>
+                    <h3>
+                        Aa
+                    </h3>
+                </div>
             </div>
-          </div>
+            <div class="color">
+                <h3>
+                    Cor:
+                </h3>
+                <div class="choose-color">
+                    <span class="color-1"></span>
+                    <span class="color-2"></span>
+                    <span class="color-3 active"></span>
+                    <span class="color-4"></span>
+                    <span class="color-5"></span>
+                </div>
+            </div>
+            <div class="background">
+                <h3>
+                    Cor de Fundo:
+                </h3>
+                <div class="choose-bg">
+                    <div class="bg-1 active">
+                        <span></span>
+                        <h5 for="bg-1">
+                            Claro
+                        </h5>
+                    </div>
+                    <div class="bg-2">
+                        <span></span>
+                        <h5 for="bg-2">
+                            Escuro
+                        </h5>
+                    </div>
+                    <div class="bg-3">
+                        <span></span>
+                        <h5 for="bg-3">
+                            Preto
+                        </h5>
+                    </div>
+                </div>
+            </div>
         </div>
+    </div>
 
-        <div class="bottom-footer">
-          <div class="copyright">
-            <p class="text">
-              Copyright&copy; 2022 Todos os Direitos Reservados
-            </p>
-          </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="./assets/js/script.js"></script>
+</body>
 
-          <div class="followme-wrap">
-            <div class="followme">
-              <h3>Siga-nos</h3>
-              <span class="footer-line"></span>
-              <div class="social-media">
-                <a href="https://www.instagram.com/techdelasofc/">
-                  <i class="fa-brands fa-instagram"></i>
-                </a>
-                <a href="mailto:techdelas@outlook.com">
-                  <i class="fa-regular fa-envelope-open"></i>
-                </a>
-                <a href="https://wa.me/message/X2RUVZJBIS2WM1">
-                  <i class="fa-brands fa-whatsapp"></i>
-                </a>
-              </div>
-            </div>
-
-            <div class="back-btn-wrap">
-              <a class="back-btn">
-                <i class="fas fa-chevron-up"></i>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </footer>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="./js/isotope.pkgd.min.js"></script>
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <script src="./js/app.js"></script>
-    <script>
-        document.addEventListener('contextmenu', event => event.preventDefault());
-        $(document).ready(function () {
-          $(".back-btn").click(function() {
-            $("html, body").animate({scrollTop: 0}, 800);
-          });
-        });
-    </script>
-  </body>
 </html>
